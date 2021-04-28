@@ -1,6 +1,9 @@
 <?php
 $last_row = floor( ( count($instance['features']) - 1 ) / $instance['per_row'] );
+echo siteorigin_widget_get_icon($feature['icon'], $icon_styles);
+
 ?>
+
 
 <div class="sow-features-list <?php if( $instance['responsive'] ) echo 'sow-features-responsive'; ?>">
 
@@ -35,6 +38,7 @@ $last_row = floor( ( count($instance['features']) - 1 ) / $instance['per_row'] )
 						if(!empty($feature['icon_color'])) $icon_styles[] = 'color: '.$feature['icon_color'];
 
 						echo siteorigin_widget_get_icon($feature['icon'], $icon_styles);
+						
 					}
 					?>
 				</div>

@@ -15,18 +15,18 @@
 					if( !empty( $headline_destination_url ) ) echo '</a>';
 					echo "</$headline_tag>";
 				}
-				break;
+			break;
 
 			case 'divider' :
 				if( $has_divider ) {
 					?>
-					<div class="decoration">
-						<div class="decoration-inside"></div>
-					</div>
-					<?php
-				}
-				break;
-
+				<div class="decoration">
+					<div class="decoration-inside"></div>
+				</div>
+				<?php
+			}
+			break;
+				
 			case 'sub_headline' :
 				if( !empty( $sub_headline ) ) {
 					echo "<$sub_headline_tag class='sow-sub-headline'>";
@@ -40,7 +40,7 @@
 					if( !empty( $sub_headline_destination_url ) ) echo '</a>';
 					echo "</$sub_headline_tag>";
 				}
-				break;
+			break;
 		}
 	}
 	?>

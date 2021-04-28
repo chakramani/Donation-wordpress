@@ -110,6 +110,9 @@ class SiteOrigin_Widget_Image_Widget extends SiteOrigin_Widget {
 		);
 	}
 
+
+	
+
 	function get_style_hash($instance) {
 		return substr( md5( serialize( $this->get_less_variables( $instance ) ) ), 0, 12 );
 	}
@@ -162,6 +165,10 @@ class SiteOrigin_Widget_Image_Widget extends SiteOrigin_Widget {
 			$link_atts['target'] = '_blank';
 			$link_atts['rel'] = 'noopener noreferrer';
 		}
+
+		// var_dump($instance['url']); 
+		// 	var_dump($instance);
+		// echo sow_esc_url($instance['url']);
 
 		return apply_filters( 'siteorigin_widgets_image_args',
 			array(

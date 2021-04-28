@@ -268,6 +268,7 @@ class SiteOrigin_Widget_Features_Widget extends SiteOrigin_Widget {
 		);
 	}
 
+	//  var_dump($instance);
 	function get_less_variables( $instance ) {
 		$less_vars = array();
 
