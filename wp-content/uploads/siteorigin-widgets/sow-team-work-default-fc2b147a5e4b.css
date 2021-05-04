@@ -1,0 +1,102 @@
+.so-widget-sow-team-work-default-fc2b147a5e4b section.volunteer {
+  padding-top: 3rem;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer {
+  margin: 0px;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer small {
+  color: darkgrey;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .c-display {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .social-media1.volunteer ul {
+  display: inline-flex;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .social-media1.volunteer ul li {
+  padding: 0px;
+  padding-left: 14px;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .card-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .title {
+  margin: 2px;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content span {
+  color: darkgrey;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content .overlay {
+  background-color: #40484ac7;
+  border-radius: 4px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content .content-details {
+  padding: 10px;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content .content-details h6 {
+  text-align: left;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content .content-details .title {
+  text-align: left;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content .paragraph {
+  position: absolute;
+  bottom: 16%;
+  font-size: 13px;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content:hover .content-details {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content:hover .content-details .title {
+  text-align: start;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content:hover .overlay {
+  opacity: 1;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content .hidden_on_overlay {
+  padding: 11px 0px;
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+}
+.so-widget-sow-team-work-default-fc2b147a5e4b .our_volunteer .content:hover .hidden_on_overlay {
+  display: none;
+}

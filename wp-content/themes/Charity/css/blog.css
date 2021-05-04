@@ -1,0 +1,77 @@
+.blog-content img {
+  width: 46%; }
+
+.blog-content h6,
+.blog-content a {
+  color: #000;
+  padding-top: 6px;
+  font-size: 12px; }
+
+.blog-content .categories::after {
+  content: "";
+  display: block;
+  width: 19%;
+  border: 1px solid #f1b33c;
+  margin: 18px 0; }
+
+.blog-content a {
+  font-size: 12px; }
+
+.blog-content h5 {
+  font-size: 14px; }
+
+.blog-content .img-banner {
+  width: 100%;
+  height: 24%;
+  object-fit: cover; }
+
+.blog-content .social-icons {
+  color: #f1b33c;
+  padding-right: 8px; }
+
+.blog-content .font-system a {
+  color: grey !important;
+  font-size: 14px;
+  padding-right: 16px;
+  text-transform: capitalize;
+  font-family: sans-serif; }
+
+.blog-content .prev p {
+  color: #000; }
+
+.blog-content .prev img {
+  width: 60px; }
+
+.media img {
+  width: 60px;
+  height: 60px; }
+
+.reply a {
+  text-decoration: none; }
+
+.comment-section h5 {
+  font-size: 12px;
+  padding-bottom: 1rem; }
+
+.comment-section a {
+  color: grey !important;
+  font-size: 12px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  text-transform: capitalize;
+  font-family: sans-serif; }
+
+.form-section .form-row {
+  font-family: sans-serif; }
+
+.btn-outline-secondary {
+  color: #d4cdcd !important;
+  border: 1px solid; }
+
+button.btn.btn-outline-secondary.btn-sm {
+  font-size: 11px;
+  color: #cdcdcd;
+  font-family: sans-serif; }
+
+textarea#comment {
+  margin: -25px 0 0 0; }

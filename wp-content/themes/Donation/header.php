@@ -39,14 +39,38 @@
         </div>
     </div>
 
+
+    
+	<?php $blog_info = get_bloginfo( 'name' ); ?>
+	
+
+	<?php
+	$description = get_bloginfo( 'description', 'display' );
+	if ( $description || is_customize_preview() ) :
+		?>
+			<p class="site-description">
+				<?php echo $description; ?>
+			</p>
+	<?php endif; ?>
+
     <!--main navbar-->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <?php
             $custom_logo_id = get_theme_mod('custom_logo');
             $image = wp_get_attachment_image_src($custom_logo_id, 'full');
-            ?>
-            <a class="navbar-brand" href="#"> <img src="<?= $image[0] ?>"></a>
+            if(has_custom_logo()): ?>
+                <a class="navbar-brand" href="#"> <img src="<?= $image[0] ?>"></a>
+            <?php endif;?>
+            
+            <?php if ( ! empty( $blog_info ) ) : ?>
+            <?php if ( is_front_page() && is_home() ) : ?>
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <?php else : ?>
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+            <?php endif; ?>
+            <?php endif; ?>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,7 +95,6 @@
                                 <i class="fas fa-arrow-right arrow"></i>
                             </button>
                     </li>
-
                 </ul> 
             </div>
         </nav>

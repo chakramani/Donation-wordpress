@@ -1,0 +1,52 @@
+.login-menu {
+  background-color: #0c1d21d4;
+}
+.login-menu .login-menu-wrap.clearfix {
+  padding: 7px;
+  font-size: 11px;
+}
+span.call a {
+  color: #707070;;
+}
+.login-menu .login-ryt-wrap {
+  float: right;
+  color: darkgray;
+}
+.login-menu .login-section {
+  display: inline-block;
+}
+.login-menu select#language {
+  background: transparent;
+  color: #a9a4a4;
+  border: none;
+}
+.login-menu .social-media {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.login-menu i.fas {
+  color: #e4e473d9;
+}
+.login-menu path {
+  color: #e4e473d9;
+}
+.login-menu .social-media span {
+  padding: 0 6px;
+}
+
+.navbar {
+  background-color: #fff !important;
+}
+.navbar a {
+  color: #000 !important;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+span.call a:hover {
+  color: #f5c32c;
+  text-decoration: none; 
+}
+a.navbar-title {
+  text-decoration: none;
+}

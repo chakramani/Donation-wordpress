@@ -1,0 +1,28 @@
+.img-nav {
+  background-image: url("../images/banner2.jpeg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.76) 100%, rgba(250, 179, 12, 0.836) 100%), url("../images/banner2.jpeg"); }
+
+.navbar-2 {
+  background-color: transparent !important;
+  color: white !important; }
+  .navbar-2 .navbar-brand img {
+    width: 65px; }
+  .navbar-2 a.nav-link {
+    color: #fff !important; }
+
+.blog-items h4 {
+  color: #fff;
+  padding-top: 3rem; }
+
+.blog-items .breadcrumb-nav {
+  background-color: transparent;
+  justify-content: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 0 5rem 0; }
+
+.horizontal {
+  border: 1px solid rgba(170, 167, 167, 0.219);
+  margin-top: 0; }

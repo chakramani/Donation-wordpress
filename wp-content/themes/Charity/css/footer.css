@@ -1,0 +1,45 @@
+.button {
+  border-radius: 65rem;
+  padding: 9px 16px;
+  font-size: 12px;
+  border: #fff;
+  color: #fff;
+  background: #e8bc36; }
+
+span.oval {
+  border: 1px solid;
+  border-radius: 37px;
+  padding: 1px 4px; }
+
+a.mr-5.fb:hover {
+  color: #f5c32c;
+  text-decoration: none;
+}
+a.yt:hover {
+  color: #f5c32c;
+  text-decoration: none;
+}
+a.insta:hover {
+  color: #f5c32c;
+  text-decoration: none;
+}
+a.twitter:hover {
+  color: #f5c32c;
+  text-decoration: none;
+}
+ol, ul {
+  padding-left: 0rem !important;
+}
+form#searchform {
+  margin-right: 3rem !important;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color:#f5c32c !important;
+}
+span.post-date {
+  color: wheat;
+  font-size: 10px;
+}

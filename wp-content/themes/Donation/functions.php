@@ -1,7 +1,6 @@
 <?php
 
-
-
+// add_theme_support('post-thumnails');
 
 function donation_theme_support()
 {
@@ -16,7 +15,6 @@ add_action('after_setup_theme', 'donation_theme_support');
 function donation_register_styles()
 {
     $version = wp_get_theme()->get('Version');
-
     wp_enqueue_style('donation-custom', get_template_directory_uri() . "/style.css", array(), $version, 'all');
     wp_enqueue_style('donation-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", array(), '4.3.1', 'all');
     wp_enqueue_style('donation-fontawesome', "https://pro.fontawesome.com/releases/v5.10.0/css/all.css", array(), '5.10.0', 'all');
@@ -58,3 +56,4 @@ add_action('init', 'donation_menus');
 
 
 require get_template_directory().'/inc/walker.php';
+// add_filter( 'use_block_editor_for_post', '__return_false' );

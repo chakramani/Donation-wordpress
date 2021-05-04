@@ -53,7 +53,7 @@
   }
 
   .team_card:hover{
-      opacity: 0.5;
+      opacity: 1;
   }
   .team_text {
     color: #3e1d9b;
