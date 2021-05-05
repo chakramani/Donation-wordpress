@@ -1,0 +1,12 @@
+img.card-img-patient {
+    border-radius: 45px;
+}
+.amount_donate_btn {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-128%, -50%);
+    right: 0;
+}
+.patient-list {
+    position: relative;
+}

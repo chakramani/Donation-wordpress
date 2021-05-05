@@ -21,7 +21,7 @@
 
 <div class="container">
     <div>
-        <h1 class="patient_list">Patient List</h1>
+        <h3 class="patient_list">Patient List</h3>
     </div>
 
     <div class="row">
@@ -33,12 +33,12 @@
             <div class="column">
                 <div class="patient-list">
                     <div class="image_section">
-                        <img class="card-img-top" src=<?php echo $upload_dir['url']."/".$print->photo; ?> alt="img"
-                            width="40" height="8">
+                        <img class="card-img-patient" src=<?php echo $upload_dir['url']."/".$print->photo; ?> alt="img"
+                        width="100" height="90" >
                     </div>
                     <center>
                         <div>
-                            <h3 class="card-title"><?php echo $print->first_name ?> <?php echo $print->last_name ?></h3>
+                            <h5 class="card-title"><?php echo $print->first_name ?> <?php echo $print->last_name ?></h5>
                         </div>
                     </center>
                     <center>
@@ -47,7 +47,7 @@
                         </div>
                     </center>
                     <div>
-                        <h5 class="patient_desc"><?php echo '* '.$print->description; ?></h5>
+                        <h6 class="patient_desc"><?php echo '* '.$print->description; ?></h6>
                     </div>
                     <div class="reqd_amount">
                         <label>Required Amount</label>

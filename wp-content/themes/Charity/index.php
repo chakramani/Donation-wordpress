@@ -25,7 +25,6 @@
       </div>
     </section>
     <!-- Jumbotron section ends here -->
-
     
     <!-- about section starts here -->
     <section>

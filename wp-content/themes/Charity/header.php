@@ -32,16 +32,18 @@
                         <i class="fas fa-envelope text-warning"></i>&nbsp; <a href="#"> info@Themesun.com</a>
                     </span>
                 </div>
-                
             </div>
+
+
+
         </div>
         
     </div>
 
-    
+
     <!--main navbar-->
     <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <!-- <?php $blog_info = get_bloginfo( 'name' ); ?> -->
         
 

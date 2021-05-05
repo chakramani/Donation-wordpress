@@ -84,7 +84,7 @@
 
                         <div class="row">
                             <div class="patient_doc" style="background-color:#aaa;">
-                                <img src=<?php echo $upload_dir['url']."/".$print->photo; ?> alt="img" width="45" height="20">
+                                <img src=<?php echo $upload_dir['url']."/".$print->photo; ?> alt="img" width="55" height="43">
                             </div>
                             <div class="patient_doc" style="background-color:#bbb;">
                                 <a href="<?php echo $upload_dir['url']."/".$print->citizenship; ?>">Citizenship</a>

@@ -1,37 +1,37 @@
 @import "../../../base/less/mixins";
 
 
-section.volunteer {
+section.team {
     padding-top: 3rem; }
   
-  .our_volunteer {
+  .our_team {
     margin: 0px; }
-    .our_volunteer small {
+    .our_team small {
       color: darkgrey; }
-    .our_volunteer .c-display {
+    .our_team .c-display {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
-    .our_volunteer .social-media1.volunteer ul {
+    .our_team .social-media1.volunteer ul {
       display: inline-flex;
       position: absolute;
       top: 80%;
       left: 0; }
-    .our_volunteer .social-media1.volunteer ul li {
+    .our_team .social-media1.volunteer ul li {
       padding: 0px;
       padding-left: 14px; }
-    .our_volunteer .card-images img {
+    .our_team .card-images img {
       width: 100%;
       height: 300px;
       object-fit: cover; }
-    .our_volunteer .title {
+    .our_team .title {
       margin: 2px; }
-    .our_volunteer .content {
+    .our_team .content {
       position: relative;
       margin: auto;
       overflow: hidden;
      }
-      .our_volunteer .content span {
+      .our_team .content span {
         color: darkgrey; }
-      .our_volunteer .content .overlay {
+      .our_team .content .overlay {
         background-color: #40484ac7;
         border-radius: 4px;
         position: absolute;
@@ -45,7 +45,7 @@ section.volunteer {
         -webkit-transition: all 0.4s ease-in-out 0s;
         -moz-transition: all 0.4s ease-in-out 0s;
         transition: all 0.4s ease-in-out 0s; }
-      .our_volunteer .content .content-details {
+      .our_team .content .content-details {
         padding: 10px;
         color: white;
         position: absolute;
@@ -56,15 +56,15 @@ section.volunteer {
         display: flex;
         flex-direction: column;
         opacity: 1; }
-        .our_volunteer .content .content-details h6 {
+        .our_team .content .content-details h6 {
           text-align: left; }
-        .our_volunteer .content .content-details .title {
+        .our_team .content .content-details .title {
           text-align: left; }
-      .our_volunteer .content .paragraph {
+      .our_team .content .paragraph {
         position: absolute;
         bottom: 16%;
         font-size: 13px; }
-      .our_volunteer .content:hover .content-details {
+      .our_team .content:hover .content-details {
         position: absolute;
         left: 0;
         right: 0;
@@ -73,15 +73,22 @@ section.volunteer {
         display: flex;
         flex-direction: column;
         opacity: 1; }
-        .our_volunteer .content:hover .content-details .title {
+        .our_team .content:hover .content-details .title {
           text-align: start; }
-      .our_volunteer .content:hover .overlay {
+      .our_team .content:hover .overlay {
         opacity: 1; }
-      .our_volunteer .content .hidden_on_overlay {
+      .our_team .content .hidden_on_overlay {
         padding: 11px 0px;
         position: absolute;
         bottom: 0;
         background: white;
         width: 100%; }
-      .our_volunteer .content:hover .hidden_on_overlay {
+      .our_team .content:hover .hidden_on_overlay {
         display: none; }
+
+        .c-display {
+          margin-bottom: 1.2rem;
+      }
+      .container {
+        max-width: 1139px !important;
+    }

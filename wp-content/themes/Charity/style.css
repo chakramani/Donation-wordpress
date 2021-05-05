@@ -9,6 +9,7 @@
  @import './css/footer.css';
  @import './css/middle-section.css';
  @import './css/nav2.css';
+ @import './css/style.css';
 
  :root {
    --blue: #007bff;
@@ -3704,7 +3705,7 @@
  
  .jumbotron {
    padding: 2rem 1rem;
-   margin-bottom: 2rem;
+   margin-bottom: 0rem !important;
    background-color: #e9ecef;
    border-radius: 0.3rem; }
    @media (min-width: 576px) {
@@ -7258,7 +7259,9 @@
    padding-bottom: 3rem !important; }
    .heading .breadcrumb a {
      font-size: 12px;
-     text-transform: uppercase; }
+     text-transform: uppercase;
+    color: #171a1d;
+    font-weight: bold; }
    .heading .breadcrumb-item + .breadcrumb-item::before {
      float: left;
      padding-right: 0.5rem;
@@ -7305,7 +7308,7 @@
    margin: 20px auto; }
  
  .testing {
-   background-image: url("../images/banner2.jpeg");
+   background-image: url("wp-content/themes/Charity/images/banner2.jpeg");
    background-position: 0 0;
    background-repeat: no-repeat;
    background: linear-gradient(rgba(239, 182, 48, 0.88) 100%, rgba(250, 179, 12, 0.836) 100%), url("../images/banner2.jpeg"); }

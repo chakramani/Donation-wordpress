@@ -15,8 +15,8 @@
 	// echo $width;
 ?>
 
-<section class="volunteer">
-	<div class="our_volunteer">
+<section class="team">
+	<div class="our_team">
 		<div class="container">
 			<div class="row">
 				<?php if( isset( $instance['features'] ) ) : ?>
