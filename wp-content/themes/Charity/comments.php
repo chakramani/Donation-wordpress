@@ -39,6 +39,7 @@ if(post_password_required()){
 					'shoty_ping' => false,
 					'echo' => true,
 					'reply_text' => 'Reply to Comment'. '<hr>',
+								
 				);
 
 				wp_list_comments($args);
