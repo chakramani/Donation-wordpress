@@ -18,7 +18,6 @@
 ?>
 
 
-
 <div class="container">
     <div>
         <h3 class="patient_list">Patient List</h3>

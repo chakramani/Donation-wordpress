@@ -51,7 +51,8 @@
 
  <!-- part of image -->
 <?php  
-    $target_dir = "C:/xampp/htdocs/wordpress/wp-content/uploads/2021/4/";
+    $upload_dir = wp_upload_dir();
+    $target_dir = $upload_dir;
     $target_file1 = $target_dir . basename($_FILES["photo"]["name"]);
     $target_file2 = $target_dir . basename($_FILES["document"]["name"]);
     $target_file3 = $target_dir . basename($_FILES["citizenship"]["name"]);
@@ -138,7 +139,7 @@
 
 
                     <div>
-                        <label for="citizenship" class="col-md-4 col-form-label text-md-right">Citizenship</label>
+                        <label for="citizenship" >Citizenship</label>
 
                         <div>
                             <input id="citizenship" type="file"
@@ -149,7 +150,7 @@
 
 
                     <div>
-                        <label for="description" class="col-md-4 col-form-label text-md-right">Description</label>
+                        <label for="description">Description</label>
 
                         <div>
                             <input id="description" type="text"

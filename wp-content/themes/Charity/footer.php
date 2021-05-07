@@ -34,7 +34,7 @@
             </div>
           <?php } ?>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 footer_first_column">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 footer_first_column">
           <?php if ( is_active_sidebar( 'footer-two' ) ) { ?>
             <div class="widget-column footer-widget-2">
               <?php dynamic_sidebar( 'footer-two' ); ?>
@@ -48,7 +48,7 @@
             </div>
           <?php } ?>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 footer_first_column">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer_first_column">
           <?php if ( is_active_sidebar( 'footer-four' ) ) { ?>
             <div class="widget-column footer-widget-4">
             <?php dynamic_sidebar( 'footer-four' ); ?>

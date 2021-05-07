@@ -169,5 +169,44 @@
 		}
 	}
 
+	/*
+	* Switch default core markup for search form, comment form, and comments
+	* to output valid HTML5.
+	*/
+	add_theme_support(
+		'html5',
+		array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+			'script',
+			'style',
+			'navigation-widgets',
+		)
+	);
 
-?>
+
+	/*
+    ========================
+        SINGLE POST CUSTOM FUNCTIONS
+    ========================
+	*/
+	function sunset_post_navigation()
+	{
+		$nav = '<div class="row">';
+
+		$prev = get_previous_post_link('<div class="post-link-nav"><span class="sunset-icon sunset-chevron-left" aria-hidden="true"></span> %link</div>', '%title');
+		$nav .= '<div class="col-xs-12 col-sm-6">'.$prev.'</div>';
+
+		$next = get_next_post_link('<div class="post-link-nav">%link <span class="sunset-icon sunset-chevron-right" aria-hidden="true"></span></div>', '%title');
+		$nav .= '<div class="col-xs-12 col-sm-6 text-right">'.$next.'</div>';
+
+		$nav .= '</div>';
+
+		return $nav;
+	}
+
+
+

@@ -75,24 +75,28 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <?php
-                wp_nav_menu(
-                    array(
-                        'menu' => 'primary',
-                        'container' => '',
-                        'theme_location' => 'primary',
-                        'items_wrap' => ' <ul class="navbar-nav ml-auto text-uppercase" id="">%3$s</ul>',
-                        'walker' => new WP_Bootstrap_Navwalker(),
-                    )
+                    wp_nav_menu(
+                        array(
+                            'menu' => 'primary',
+                            'container' => '',
+                            'theme_location' => 'primary',
+                            'items_wrap' => ' <ul class="navbar-nav ml-auto text-uppercase" id="">%3$s</ul>',
+                            'walker' => new WP_Bootstrap_Navwalker(),
+                        )
                     );
                 ?>
                  <ul class="navbar-nav ml-auto text-uppercase">
 
                     <li>
                         <div class="donate_button">
-                            <button class="button">
-                                DONATE
-                                <i class="fas fa-arrow-right arrow"></i>
-                            </button>
+                            <a href="http://localhost/wordpress/patient/">
+                                <button class="button">
+                                    DONATE
+                                    <i class="fas fa-arrow-right arrow"></i>
+                                </button>
+                            </a>
+                            
+                        </div>
                     </li>
 
                 </ul> 
