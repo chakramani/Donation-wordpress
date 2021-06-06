@@ -137,12 +137,12 @@
 	function charity_theme_js()
 	{
 		$version = wp_get_theme()->get('Version');
-		wp_enqueue_script('donation-js', get_template_directory_uri() . "/assets/js/main.js", array(), $version, 'all', true);
+		wp_enqueue_script('donation-bootstrap-jquery', "https://code.jquery.com/jquery-3.4.1.js", array(), '3.4.1', 'all', true);
 		wp_enqueue_script('donation-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '3.5.1', 'all', true);
 		wp_enqueue_script('donation-ajax', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js", array(), '1.16.0', 'all', true);
 		wp_enqueue_script('donation-bootstrap-js', "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", array(), '4.5.2', 'all', true);
-		wp_enqueue_script('donation-bootstrap-jquery', "https://code.jquery.com/jquery-3.4.1.js", array(), '3.4.1', 'all', true);
 		wp_enqueue_script('donation-cloudflare-jquery', "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js", array(), '4.0.1', 'all', true);
+		wp_enqueue_script('donation-js', get_template_directory_uri() . "/assets/js/main.js", array(), $version, 'all', true);
 
 	}
 	add_action('wp_enqueue_scripts', 'charity_theme_js');
@@ -207,6 +207,14 @@
 
 		return $nav;
 	}
+
+
+add_action('wp_enqueue_scripts', 'my_register_javascript', 100);
+
+function my_register_javascript() {
+  wp_register_script('mediaelement', plugins_url('wp-mediaelement.min.js', __FILE__), array('jquery'), '4.8.2', true);
+  wp_enqueue_script('mediaelement');
+}
 
 
 

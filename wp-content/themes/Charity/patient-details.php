@@ -49,10 +49,10 @@
     }
 ?>
 
- <!-- part of image -->
+<!-- part of image -->
 <?php  
     $upload_dir = wp_upload_dir();
-    $target_dir = $upload_dir;
+    $target_dir =$upload_dir['url'];
     $target_file1 = $target_dir . basename($_FILES["photo"]["name"]);
     $target_file2 = $target_dir . basename($_FILES["document"]["name"]);
     $target_file3 = $target_dir . basename($_FILES["citizenship"]["name"]);

@@ -1,3 +1,4 @@
+
 <?php
 $last_row = floor( ( count($instance['features']) - 1 ) / $instance['per_row'] );
 echo siteorigin_widget_get_icon($feature['icon'], $icon_styles);
@@ -5,18 +6,16 @@ echo siteorigin_widget_get_icon($feature['icon'], $icon_styles);
 ?>
 
 
-<div class="sow-features-list <?php if( $instance['responsive'] ) echo 'sow-features-responsive'; ?>">
+<div class="container sow-features-list <?php if( $instance['responsive'] ) echo 'sow-features-responsive'; ?>">
 
 	<?php if( isset( $instance['features'] ) ) : ?>
 		<?php foreach( $instance['features'] as $i => $feature ) : ?>
-			<!-- <?php echo esc_attr( $feature['container_position'] ) ?> -->
+				<div class="sow-features-feature sow-icon-container-position-<?php echo esc_attr( $feature['container_position'] ) ?> <?php if(  floor( $i / $instance['per_row'] ) == $last_row ) echo 'sow-features-feature-last-row' ?>" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
 
-			<div class="sow-features-feature sow-icon-container-position-<?php echo esc_attr( $feature['container_position'] ) ?> <?php if(  floor( $i / $instance['per_row'] ) == $last_row ) echo 'sow-features-feature-last-row' ?>" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
-
-				<?php if( !empty( $feature['more_url'] ) && $instance['icon_link'] ) echo '<a href="' . sow_esc_url( $feature['more_url'] ) . '" ' . ( $instance['new_window'] ? 'target="_blank" rel="noopener noreferrer"' : '' ) . '>'; ?>
-				<div
+					<?php if( !empty( $feature['more_url'] ) && $instance['icon_link'] ) echo '<a href="' . sow_esc_url( $feature['more_url'] ) . '" ' . ( $instance['new_window'] ? 'target="_blank" rel="noopener noreferrer"' : '' ) . '>'; ?>
+					<div
 					class="sow-icon-container <?php echo !empty($instance['container_shape']) ? 'sow-container-' . esc_attr($instance['container_shape']) : 'sow-container-none'?>"
-                    style="color: <?php echo esc_attr($feature['container_color']) ?>; "
+					style="color: <?php echo esc_attr($feature['container_color']) ?>; "
 					<?php  echo ( ! empty( $feature['icon_title'] ) ? 'title="' . esc_attr( $feature['icon_title'] ) . '"' : '' ); ?>>
 					<?php
 					$icon_styles = array();
@@ -67,8 +66,8 @@ echo siteorigin_widget_get_icon($feature['icon'], $icon_styles);
 					<?php endif; ?>
 				</div>
 			</div>
-
 		<?php endforeach; ?>
 	<?php endif; ?>
 
 </div>
+

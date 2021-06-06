@@ -1,6 +1,6 @@
 <!-- footer-jumbotron starts here -->
 
-<div class="jumbotron jumbo d-none d-sm-block">
+<!-- <div class="jumbotron jumbo d-none d-sm-block">
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- footer-jumbotron ends here -->
 
 <!-- Footer -->
@@ -34,7 +34,7 @@
             </div>
           <?php } ?>
         </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 footer_first_column">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 footer_first_column">
           <?php if ( is_active_sidebar( 'footer-two' ) ) { ?>
             <div class="widget-column footer-widget-2">
               <?php dynamic_sidebar( 'footer-two' ); ?>
@@ -48,7 +48,7 @@
             </div>
           <?php } ?>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer_first_column">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 footer_first_column">
           <?php if ( is_active_sidebar( 'footer-four' ) ) { ?>
             <div class="widget-column footer-widget-4">
             <?php dynamic_sidebar( 'footer-four' ); ?>
@@ -60,12 +60,12 @@
   </div> 
 </footer>
 
-<!-- Bottom Copyright footer -->
+
 <section class="end-section">
   <div class="container">
     <div class="row">
       <span class="mx-auto mt-4">
-        <p class="text-light"> @copyright 2015 themedevelopment. all right segments </p>
+        <p class="text-light text-center"> @copyright 2021 UX-Qode. all right segments </p>
       </span>
     </div>
   </div>

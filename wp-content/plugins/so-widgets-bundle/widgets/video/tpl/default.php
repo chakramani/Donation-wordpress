@@ -40,7 +40,7 @@ $so_video = new SiteOrigin_Video();
 
 do_action( 'siteorigin_widgets_sow-video_before_video', $instance );
 ?>
-
+<!-- <?php var_dump($sources); ?> -->
 <div class="sow-video-wrapper">
 	<?php if ( $is_skinnable_video_host ) : ?>
 	<video

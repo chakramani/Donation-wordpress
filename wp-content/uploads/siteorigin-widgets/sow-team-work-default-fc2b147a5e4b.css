@@ -24,6 +24,7 @@
   width: 100%;
   height: 300px;
   object-fit: cover;
+  padding-bottom: 0px;
 }
 .so-widget-sow-team-work-default-fc2b147a5e4b .our_team .title {
   margin: 2px;
@@ -102,9 +103,6 @@
 }
 .so-widget-sow-team-work-default-fc2b147a5e4b .c-display {
   margin-bottom: 1.2rem;
-}
-.so-widget-sow-team-work-default-fc2b147a5e4b .container {
-  max-width: 1139px !important;
 }
 .so-widget-sow-team-work-default-fc2b147a5e4b a {
   color: #999097 !important;

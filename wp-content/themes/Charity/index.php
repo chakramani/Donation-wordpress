@@ -1,9 +1,9 @@
-  <?php  get_header();  ?>
+<?php  get_header();  ?>
   
   <!-- Page Content -->
   <div id="page-home">
     <!-- jumbotron header starts here -->
-    <section class="jumbotron-title">
+    <!-- <section class="jumbotron-title">
       <div class="jumbotron">
         <div class="heading">
           <div class="container">
@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Jumbotron section ends here -->
     
     <!-- about section starts here -->
@@ -31,10 +31,10 @@
       <div class="about-section">
         <div class="container">
         <?php
-          if(have_posts()) : while(have_posts()) : the_post();
-          // the_title();
+          if(have_posts()) : 
+            while(have_posts()) : 
+            the_post();
             the_content();
-
           endwhile; endif;
         ?>      
         </div>
@@ -42,3 +42,6 @@
     </section>
   </div>
 <?php get_footer();  ?>
+
+
+

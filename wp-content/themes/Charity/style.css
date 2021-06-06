@@ -1,4 +1,35 @@
 /*!
+ * Theme Name: 		   Charity
+ * Text Domain: 	   Charity
+ * Version:            1.0.0
+ * Tested up to:       1.0.0
+ * Requires at least:  1.0
+ * Requires PHP:       7.2
+ * Author:             Chakra
+ * Author URI:         https://oceanwp.org/about-me/
+ * Theme URI:          https://oceanwp.org/
+ * Description:        Charity is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful & professional design. Very fast, responsive, RTL & translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet & mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor & WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+ * Tags:               two-columns, right-sidebar, footer-widgets, blog, news, custom-background, custom-menu, post-formats, rtl-language-support, sticky-post, editor-style, threaded-comments, translation-ready, buddypress, custom-colors, featured-images, full-width-template, theme-options, e-commerce, block-styles, wide-blocks, accessibility-ready
+ *
+ * License: GNU General Public License v2.0 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * All files, unless otherwise stated, are released under the GNU General Public
+ * License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+ * This theme, like WordPress, is licensed under the GPL.
+ * Use it to make something cool, have fun, and share what you've learned
+ * with others.
+ *
+ * DO NOT ADD YOUR CSS TO THIS FILE - IT WILL BE LOST
+ * To add your own CSS, use a child theme: https://github.com/oceanwp/oceanwp-child-theme
+ *
+ * CSS file is in "assets/css"
+ */
+
+
+
+/*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -7270,7 +7301,7 @@
      content: "/"; }
  
  .about-section {
-   text-align: center;
+   /* text-align: center; */
    margin: 0 auto; }
    .about-section h3 {
      font-size: 23px;
@@ -7343,8 +7374,8 @@
  .testing .counterup .row .col-sm-3 {
    padding: 4%; }
  
- .skills {
-   padding: 6rem 0; }
+ /* .skills {
+   padding: 6rem 0; } */
  
  p.bar {
    margin-top: 1rem;
@@ -7353,8 +7384,8 @@
    font-family: "Montserrat", sans-serif; }
  
  .progress {
-   height: 7px;
-   border-radius: 0rem; }
+   height: 7px !important;
+   border-radius: 0rem !important; }
  
  .border-top.border-warning.mr-auto {
    margin: 0; }
@@ -7371,9 +7402,9 @@
    border-bottom: 0 !important; }
  
  .card-body {
-   min-height: 1px;
-   margin-top: -32px;
-   font-size: 11px; }
+   min-height: 1px ;
+   font-size: 11px;
+ }
  
  button.btn.btn-link {
    text-decoration: none;
@@ -7839,7 +7870,7 @@
    box-sizing: border-box; }
  
  body {
-   font-family: "Montserrat", sans-serif; }
+   font-family: "Montserrat", sans-serif !important; }
  
  a {
    color: #707070; }
@@ -7860,11 +7891,79 @@
    font-size: 12px;
    font-family: "Open Sans", sans-serif; }
  
- h1, h2, h3, h4, h5, h6 {
-   text-transform: uppercase; }
+ /* h1, h2, h3, h4, h5, h6 {
+   text-transform: uppercase; } */
  
  .fa-arrow-right {
    font-size: 10px; }
 
+
+   .dropdown-item.active, .dropdown-item:active {
+    background-color: #e1bc4d !important;
+}
+
+
+img.card-img-top {
+  height: 72px;
+  border-radius: 45px;
+  width: 80px;
+}
    
- 
+
+
+
+/* for comment */
+footer.comment-meta {
+  background-color: #ffff;
+  color: #533d3d;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 1rem;
+  font-size: 12px;
+} 
+
+.comment-author.vcard img {
+  height: 60px;
+  width: 60px;
+}
+
+img.avatar.avatar-60.photo {
+  border-radius: 50%;
+}
+
+.comment-content p {
+  color: #b7b7b7;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.reply a {
+  color: #ffc107;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+div#comments {
+  padding-left: 25%;
+}
+
+div#respond {
+  padding-left: 25%;
+}
+
+ul.children {
+  margin-left: 5%;
+}
+.comment-reply-title {
+  font-size: 12px;
+}
+
+.post-link-nav {
+  padding: 21px;
+  margin-left: 50%;
+
+}
+
+.post-link-nav a{
+  color: black;
+}
+

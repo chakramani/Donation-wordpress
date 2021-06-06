@@ -1,20 +1,19 @@
 
 <link rel="stylesheet" href="<?php echo 'http://localhost/wordpress/wp-content/plugins/so-widgets-bundle/widgets/team-work/styles/default.less' ?>">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-<?php
+<!-- <?php
 	/**
 	 * @var $facebook_url 
 	 * @var $youtube_url
 	 * @var $instragram_url
 	 * @var $twitter_url
 	 */
-?>
+?> -->
 <?php
 	$last_row = floor( ( count($instance['features']) - 1 ) / $instance['per_row'] );
 	$width = round( 100 / $instance['per_row'], 3 );
 	// echo $width;
 ?>
-
 <section class="team">
 	<div class="our_team">
 		<div class="container">

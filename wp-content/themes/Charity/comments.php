@@ -11,34 +11,35 @@ if(post_password_required()){
 	<?php 
 	if(have_comments()):
 	?>
-		<h2 class="comment-title">
+		<h6 class="comment-title">
 			<?php
 				printf(
-					esc_html(_nx('One comment on &ldquo;%2$s&rdquo;','%1$s comments on &ldquo;%2$s&rdquo;',get_comments_number(),'comments title','charitytheme')),
+					esc_html(_nx('One comment','COMMENTS( %1$s )',get_comments_number(),'comments title','charitytheme')),
+					// esc_html(_nx('One comment on &ldquo;%2$s&rdquo;','%1$s comments( %1$s ) on &ldquo;%2$s&rdquo;',get_comments_number(),'comments title','charitytheme')),
 					number_format_i18n(get_comments_number()),
 					'<span>' .get_the_title() .'</span>'
 				);
 			?>
-		</h2>
-		<ol class="comment-list">
-		<hr>
+		</h6>
+		<ul class="comment-list">
+			<hr>
 			<?php
 				$args = array(
 					'walker' => null,
 					'max_depth' => '',
-					'style' => 'ol',
+					'style' => 'ul',
 					'callback' => null,
 					'end-callback' =>  null,
 					'type' => 'all',
 					'page' => '',
 					'per_page' => '',
-					'avatar_size' => 32,
+					'avatar_size' => 60,
 					'reverse_top_level' => null,
 					'reverse_children' => '',
-					'format' => 'html5',
+					// 'format' => 'html5',
 					'shoty_ping' => false,
 					'echo' => true,
-					'reply_text' => 'Reply to Comment'. '<hr>',
+					'reply_text' => 'Reply'. '<hr>',
 								
 				);
 
@@ -46,7 +47,7 @@ if(post_password_required()){
 			?>
 			<hr>
 
-		</ol>
+		</ul>
 		<?php if(!comments_open() && get_comments_number()): ?>
 			<p class="no-comments"> <?php esc_html_e('Commments are closed.','charitytheme'); ?></p>
 		<?php endif; ?>
