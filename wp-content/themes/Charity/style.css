@@ -7515,7 +7515,8 @@
         display: none; }
  
  .img-nav {
-   background-image: url("../images/background.jpg");
+  background-image: url(http://localhost/Wordpress/wp-content/uploads/2021/06/background.jpg);
+   /* background-image: url("../images/background.jpg"); */
    background-position: 0 0;
    background-repeat: no-repeat;
    background-repeat: repeat;
@@ -7978,4 +7979,21 @@ li.breadcrumb-item a {
 .font-system {
   color: #f1b33c;
   padding-right: 10px;
+}
+.font-system a {
+  color: #C1C1C1;
+  padding-right: 8px;
+}
+.font-system i {
+  padding: 4px;
+}
+
+button.btn.btn-outline-secondary.btn-sm {
+  margin: 0 6px ;
+}
+
+.btn {
+  display: flex !important;
+  justify-content: center;
+  align-items: center !important;
 }

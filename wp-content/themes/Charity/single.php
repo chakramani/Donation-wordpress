@@ -1,19 +1,8 @@
-<?php get_header(); ?>
-
-<style>
-.img-nav {
-    background-image: url(http://localhost/Wordpress/wp-content/uploads/2021/06/background.jpg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-repeat: repeat;
-    box-shadow: inset 0 0 0 2000px #050404c4;
-}
-</style>
-
 
 <!----bradcrumb starts here -->
 <div id="blog-page">
     <div class="img-nav">
+    <?php get_header(); ?>
         <span>
             <hr class="horizontal" />
         </span>
@@ -23,7 +12,7 @@
                 <ol class="breadcrumb breadcrumb-nav">
                     <li class="breadcrumb-item"><a href="<?php echo get_home_url(); ?>" class="active">Home</a></li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a href="http://localhost/Wordpress/blog/">our blog</a>
+                        <a href="http://localhost/Wordpress/blog/">OUR BLOG</a>
                     </li>
                 </ol>
             </nav>
@@ -33,16 +22,16 @@
 
 <!-- // // the_content();
         // get_template_part('template-parts/content', 'article'); -->
-<div class="blog-content py-5">
+<div class="blog-content">
     <div class="blog-content-wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-3 d-none d-md-block">
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                     </form>
                     <!-- blog categories- -->
-                    <h5 class="pt-4 categories">blog categories</h5>
+                    <h5 class="pt-4 categories">BLOG CATEGORIES</h5>
                     <ul>
                         <?php $categories = get_categories();
                         foreach ($categories as $category) {
@@ -127,8 +116,6 @@
 
                     <!-- font-system -->
                     <div class="font-system">
-					<i class="far fa-alarm-clock"></i> <a href="#"> <?php the_time('m/j/y g:i A') ?></a>
-
                         <i class="far fa-alarm-clock "></i><a href="#"><?php the_time('m/j/y g:i A') ?></a>
                         <i class="far fa-user-circle "></i><?php echo the_author_posts_link(); ?>
                         <i class="fal fa-comment-alt-dots "></i> <a
