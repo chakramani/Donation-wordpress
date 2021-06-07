@@ -5846,9 +5846,9 @@
  .px-5 {
    padding-right: 3rem !important; }
  
- .pb-5,
+ /* .pb-5,
  .py-5 {
-   padding-bottom: 3rem !important; }
+   padding-bottom: 3rem !important; } */
  
  .pl-5,
  .px-5 {
@@ -7967,3 +7967,15 @@ ul.children {
   color: black;
 }
 
+li.breadcrumb-item a {
+  color: #707070;
+}
+
+.side-bar-categories.py-3 ul li a {
+  color: black;
+}
+
+.font-system {
+  color: #f1b33c;
+  padding-right: 10px;
+}
