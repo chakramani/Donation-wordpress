@@ -58,6 +58,8 @@ class SiteOrigin_Widget_Text_Button_Widget extends SiteOrigin_Widget {
 	function get_template_variable($instance,$args)
     {
         if( empty( $instance ) ) return array();
+
+		// var_dump($instance);
         return array(
 			'text_button' => $instance['textbutton']['text']
         );

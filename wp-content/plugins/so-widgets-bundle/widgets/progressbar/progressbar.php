@@ -63,25 +63,25 @@ class SiteOrigin_Widget_Progress_Widget extends SiteOrigin_Widget {
 	}
 
     function get_less_variable($instance)
-    {
-        $less_vars = array();
+	{
+		$less_vars = array();
 
-        // progressbar
+		// progressbar
 		$less_vars['progressbar_tag'] = isset( $instance['progressbar']['tag'] ) ? $instance['headline']['tag'] : false;
 		$less_vars['progressbar_color'] = isset( $instance['progressbar']['color'] ) ? $instance['headline']['color'] : false;
-    }
+	}
 
     function get_template_variable($instance,$args)
-    {
-        if( empty( $instance ) ) return array();
+		{
+			if( empty( $instance ) ) return array();
 
-		var_dump($instance);
-        return array(
-			'progressbar_text' => $instance['progressbar']['text'],
-			'text_percentage' => $instance['progressbar']['percentage'],
-			'progressbar_tag' => $instance['progresbar']['tag']
-        );
-    }
+			var_dump($instance);
+			return array(
+				'progressbar_text' => $instance['progressbar']['text'],
+				'text_percentage' => $instance['progressbar']['percentage'],
+				'progressbar_tag' => $instance['progresbar']['tag']
+			);
+		}
 }
 
 siteorigin_widget_register('sow-progressbar', __FILE__, 'SiteOrigin_Widget_Progress_Widget');

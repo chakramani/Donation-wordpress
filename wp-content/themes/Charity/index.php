@@ -4,7 +4,7 @@
 <div id="page-home">
     <section>
         <div class="about-section">
-            <div class="container">
+            <div >
                 <?php
           if(have_posts()) : 
             while(have_posts()) : 

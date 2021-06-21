@@ -74,7 +74,6 @@ class SiteOrigin_Widget_Connect_Widget extends SiteOrigin_Widget {
     function get_template_variable($instance,$args)
     {
         if( empty( $instance ) ) return array();
-
 		var_dump($instance);
         return array(
 			'progressbar_text' => $instance['progressbar']['text'],

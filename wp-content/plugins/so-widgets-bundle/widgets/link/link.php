@@ -25,35 +25,6 @@ class SiteOrigin_Widget_Link_Widget extends SiteOrigin_Widget {
 		);
 	}
 
-
-	// function sow_carousel_get_next_posts_page() {
-	// 	if ( empty( $_REQUEST['_widgets_nonce'] ) || !wp_verify_nonce( $_REQUEST['_widgets_nonce'], 'widgets_action' ) ) return;
-	
-	// 	$template_vars = array();
-	// 	if ( ! empty( $_GET['instance_hash'] ) ) {
-	// 		$instance_hash = $_GET['instance_hash'];
-	// 		global $wp_widget_factory;
-	// 		/** @var SiteOrigin_Widget $widget */
-	// 		$widget = ! empty ( $wp_widget_factory->widgets['SiteOrigin_Widget_PostCarousel_Widget'] ) ?
-	// 			$wp_widget_factory->widgets['SiteOrigin_Widget_PostCarousel_Widget'] : null;
-	// 		if ( ! empty( $widget ) ) {
-	// 			$instance = $widget->get_stored_instance($instance_hash);
-	// 			$instance['paged'] = $_GET['paged'];
-	// 			$template_vars = $widget->get_template_variables($instance, array());
-	// 		}
-	// 	}
-	// 	ob_start();
-	// 	extract( $template_vars );
-	// 	include 'tpl/carousel-post-loop.php';
-	// 	$result = array( 'html' => ob_get_clean() );
-	// 	header('content-type: application/json');
-	// 	echo json_encode( $result );
-	
-	// 	exit();
-	// }
-	// add_action( 'wp_ajax_sow_carousel_load_post', 'sow_carousel_get_next_posts_page' );
-	// add_action( 'wp_ajax_nopriv_sow_carousel_load_post', 'sow_carousel_get_next_posts_page' );
-
 	function get_widget_form(){
 		return array(
 			'link' => array(

@@ -1,0 +1,42 @@
+.so-widget-sow-who-we-are-default-d75171398898 .who_we_are {
+  background-color: #ABA7A71a;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .who_we_are .heading .underline::after {
+  left: 0;
+  width: 10% !important;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .who_we_are .who_we_are_wrapper {
+  margin-top: 30px;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .who_we_are .who_we_are_image img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .who_we_are .content p {
+  color: darkgray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .heading {
+  padding-bottom: 0rem !important;
+}
+.so-widget-sow-who-we-are-default-d75171398898 button.btn {
+  background: #f1b33c;
+  border: #fff;
+  border-radius: 65rem;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 105px;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .underline::after {
+  left: 0;
+  width: 10% !important;
+}
+.so-widget-sow-who-we-are-default-d75171398898 .underline {
+  position: relative;
+}
+.so-widget-sow-who-we-are-default-d75171398898 button.btn a {
+  color: white !important;
+}

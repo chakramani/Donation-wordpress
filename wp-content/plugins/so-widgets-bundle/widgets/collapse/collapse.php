@@ -48,6 +48,7 @@ class SiteOrigin_Widget_Collapse_Widget extends SiteOrigin_Widget {
 
 	function get_template_variables( $instance, $args ) {
 		if( empty( $instance ) ) return array();
+		// var_dump($instance['collapse']);
 		return array(
 			'head' => $instance['collapse']
 		);

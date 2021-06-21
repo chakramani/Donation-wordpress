@@ -6,7 +6,7 @@
       </div>
       <div class="col-6">
         <div class="donate_button float-right">
-			<a href="<?php echo sow_esc_url( $instance['textbutton']['bt_text']);  ?>">
+			  <a href="<?php echo sow_esc_url( $instance['textbutton']['bt_text']);  ?>">
 				<button class="button">
 					Donate Now
 					<span class="oval"><i class="fas fa-arrow-right"></i></span>

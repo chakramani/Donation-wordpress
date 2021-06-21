@@ -27,14 +27,13 @@
 								! empty( $feature['icon_image_fallback'] ) ? $feature['icon_image_fallback'] : false
 							); 
 						?>
-						<div class="col col-lg-auto" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
-							<!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pb-4"> -->
+						<div class="col-lg-auto" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
 							<div class="c-display">
 								<div class="volunteer_description">
 									<div class="content">
 										<div class="card-images">
 											<?php if(!empty($attachment[0])):  ?>
-											<img src="<?php echo sow_esc_url($attachment[0]); ?>" alt="img">
+												<img src="<?php echo sow_esc_url($attachment[0]); ?>" alt="img">
 											<?php endif; ?>
 										</div>
 										<div class="hidden_on_overlay">

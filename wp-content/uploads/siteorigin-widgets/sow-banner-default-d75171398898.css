@@ -1,0 +1,167 @@
+.so-widget-sow-banner-default-d75171398898 {
+  /*--Home Banner--*/
+  /*--text overlay--*/
+  /*--owl carousel prev and next bottons*/
+}
+.so-widget-sow-banner-default-d75171398898 .banner .item {
+  color: #FFF;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-align: center;
+}
+.so-widget-sow-banner-default-d75171398898 .banner .item img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.so-widget-sow-banner-default-d75171398898 .overlay {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.so-widget-sow-banner-default-d75171398898 .overlay .overlay .overlay-layer_bottom {
+  display: block;
+}
+.so-widget-sow-banner-default-d75171398898 .overlay .overlay-layer_top {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.so-widget-sow-banner-default-d75171398898 .overlay .social-media1 ul {
+  list-style-type: none;
+  position: absolute;
+  top: 35%;
+}
+.so-widget-sow-banner-default-d75171398898 .overlay .social-media1 ul li {
+  display: block;
+  padding: 5px;
+}
+.so-widget-sow-banner-default-d75171398898 .overlay a:hover {
+  color: #f1b33c;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-nav button.owl-prev {
+  height: 40px;
+  width: 40px;
+  color: #e5e8e8;
+  font-size: 17px;
+  position: absolute;
+  top: 200px;
+  right: 2%;
+  background: none;
+  border: none;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-nav button.owl-prev::after {
+  background: #f1b33c;
+  content: '';
+  display: block;
+  height: 2px;
+  margin-top: 2px;
+  position: absolute;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-nav button.owl-prev:hover::after {
+  width: 100%;
+  left: 0;
+  transition: width .3s;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-prev span {
+  top: 0%;
+  right: 15px;
+  position: absolute;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-nav button.owl-next {
+  height: 40px;
+  width: 40px;
+  color: #e5e8e8;
+  font-size: 17px;
+  position: absolute;
+  top: 235px;
+  right: 2%;
+  background: none;
+  border: none;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-nav button.owl-next::after {
+  background: #f1b33c;
+  content: '';
+  display: block;
+  height: 2px;
+  margin-top: 2px;
+  position: absolute;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-nav button.owl-next:hover::after {
+  width: 100%;
+  left: 0;
+  transition: width .3s;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-next span {
+  position: absolute;
+  top: 0%;
+  left: 15px;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel button.owl-dot {
+  display: none;
+}
+.so-widget-sow-banner-default-d75171398898 .card {
+  background: #f1b33c;
+  border: 1px solid transparent;
+  display: inline-block;
+  max-height: 420px;
+  position: absolute;
+  left: 26%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.so-widget-sow-banner-default-d75171398898 .card .card-body {
+  padding: 20px;
+}
+.so-widget-sow-banner-default-d75171398898 .card .card-title {
+  font-weight: 800;
+  letter-spacing: 3.1px;
+  margin-bottom: 12%;
+}
+.so-widget-sow-banner-default-d75171398898 .card small {
+  color: black;
+  font-size: 14px;
+}
+.so-widget-sow-banner-default-d75171398898 .card p.card-text {
+  font-size: 14px;
+  color: #fff;
+}
+.so-widget-sow-banner-default-d75171398898 .card progress {
+  margin: 6px 0px;
+  transition: 1.8s linear !important;
+}
+.so-widget-sow-banner-default-d75171398898 .card .donate_button button.btn.card_button {
+  border: 1px solid white;
+  margin-top: 12px;
+  border-radius: 51rem;
+  background: #f1b33c;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 105px;
+}
+.so-widget-sow-banner-default-d75171398898 .owl-carousel,
+.so-widget-sow-banner-default-d75171398898 .owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.so-widget-sow-banner-default-d75171398898 a {
+  color: #ffffffd6;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px;
+  text-decoration: none;
+}
