@@ -32,8 +32,8 @@ $(document).ready(function() {
 });
 
 
-    var p = document.querySelector('.progress-bar');
-    p.setAttribute("style"," transition:1s");
+    // var p = document.querySelector('.progress-bar');
+    // p.setAttribute("style"," transition:1s");
 
 // function progress() {
 //     const progressBar = document.querySelector('progress');
