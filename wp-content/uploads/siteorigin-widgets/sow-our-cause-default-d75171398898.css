@@ -102,3 +102,18 @@
   margin: 15px;
   text-align: center;
 }
+@media screen and (max-width: 976px) {
+  .so-widget-sow-our-cause-default-d75171398898 .our_cause .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .so-widget-sow-our-cause-default-d75171398898 .our_cause .row .col-lg-auto {
+    width: 100% !important;
+  }
+  .so-widget-sow-our-cause-default-d75171398898 .row.r-fx {
+    display: flex;
+    flex-direction: row !important;
+  }
+}

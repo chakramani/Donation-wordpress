@@ -107,3 +107,20 @@
 .so-widget-sow-team-work-default-d75171398898 a {
   color: #999097;
 }
+@media screen and (max-width: 600px) {
+  .so-widget-sow-team-work-default-d75171398898 .our_team .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .so-widget-sow-team-work-default-d75171398898 .our_team .row .col-lg-auto {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 976px) {
+  .so-widget-sow-team-work-default-d75171398898 .our_team .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

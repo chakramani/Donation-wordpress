@@ -9,7 +9,7 @@
 
 <div class="our_cause">
     <div class="container">
-        <div class="row"> 
+        <div class="row "> 
             <?php if( isset( $instance['ourcause'] ) ) : ?>
                 <?php foreach( $instance['ourcause'] as $i => $ourcause ) : ?>
                     <?php
@@ -22,7 +22,7 @@
 
                     
 
-                    <div  style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
+                    <div class="col-12 col-lg-auto" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
                         <div class="c-display">
                             <div class="cause_description">
                                 <div class="content">
@@ -50,7 +50,7 @@
                                     <div class="progress-bar" role="progressbar" style="width: <?php echo ($ourcause['raised']/$ourcause['goal'])*100; ?>%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             
-                                <div class="row">
+                                <div class="row r-fx">
                                     <div class="col-6">
                                         <div class="raised">
                                             <span>RAISED</span></br>

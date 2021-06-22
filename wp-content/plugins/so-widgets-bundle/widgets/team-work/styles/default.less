@@ -1,6 +1,5 @@
 section.team {
     padding-top: 3rem; }
-  
   .our_team {
     margin: 0px; }
     .our_team small {
@@ -87,9 +86,30 @@ section.team {
         .c-display {
           margin-bottom: 1.2rem;
       }
-    //   .container {
-    //     max-width: 1139px !important;
-    // }
     a {
       color: #999097;
+  }
+
+  @media screen and (max-width:600px) {
+    .our_team .row {
+      display: flex;
+      // justify-content: center;
+      flex-direction: column;
+      // align-items: center;
+  }
+  .our_team .row .col-lg-auto {
+    width: 100% !important;
+  }
+  }
+  @media screen and (max-width:976px) {
+    .our_team .row {
+      display: flex;
+      justify-content: center;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  .our_team .row .col-lg-auto {
+    width: 100% !important;
+  }
   }
