@@ -1,6 +1,10 @@
 
 /*slider*/
+
+
+console.log('jaha');
 $(document).ready(function() {
+    // $('.dropify').dropify();
  
     $("#banner-slider").owlCarousel({
     margin: 10,

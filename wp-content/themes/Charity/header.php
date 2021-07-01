@@ -51,7 +51,7 @@
             if(has_custom_logo()): ?>
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?= $image[0] ?>"></a>
             <?php endif;?>
-            
+
             <div >
                 <?php if ( ! empty( $blog_info ) ) : ?>
                     <?php if ( is_front_page() && is_home() ) : ?>
@@ -70,33 +70,40 @@
                         </p>
                 <?php endif; ?>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <?php
-                    wp_nav_menu(
-                        array(
-                            'menu' => 'primary',
-                            'container' => '',
-                            'theme_location' => 'primary',
-                            'items_wrap' => ' <ul class="navbar-nav ml-auto text-uppercase" id="">%3$s</ul>',
-                            'walker' => new WP_Bootstrap_Navwalker(),
-                        )
-                    );
-                ?>
-                 <ul class="navbar-nav ml-auto text-uppercase">
-
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-uppercase">
                     <li>
-                        <div class="donate_button">
-                            <a href="http://localhost/wordpress/patient/">
-                                <button class="button">
-                                    DONATE
-                                    <i class="fas fa-arrow-right arrow"></i>
-                                </button>
-                            </a>
-                            
-                        </div>
+                        <?php
+                            wp_nav_menu(
+                                array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'theme_location' => 'primary',
+                                    'items_wrap' => ' <ul class="navbar-nav ml-auto text-uppercase" id="">%3$s</ul>',
+                                    'walker' => new WP_Bootstrap_Navwalker(),
+                                )
+                            );
+                        ?>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        </li>
                 </ul> 
+                <div class="donate_button">
+                    <a href="http://localhost/wordpress/patient/">
+                        <button class="button">
+                            DONATE
+                            <i class="fas fa-arrow-right arrow"></i>
+                        </button>
+                    </a>
+                    
+                </div>
+
             </div>
         </nav>
     </div>

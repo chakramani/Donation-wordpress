@@ -126,35 +126,39 @@
 	function donation_register_styles()
 	{
 		$version = wp_get_theme()->get('Version');
-	
-		wp_enqueue_style('donation-style', get_template_directory_uri() . "/style.css", array(), $version, 'all');
+		wp_enqueue_style('donation-dropify-svg', "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css", array(), '5.10.0', 'all');
 		// wp_enqueue_style('donation-custom', get_template_directory_uri() . "/custom.css", array(), $version, 'all');
 		wp_enqueue_style('donation-maxcdn-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css", array(), '4.5.2', 'all');
-		wp_enqueue_style('donation-maxcdn-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css", array(), '4.5.2', 'all');
+		// wp_enqueue_style('donation-maxcdn-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css", array(), '4.5.2', 'all');
 		wp_enqueue_style('donation-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", array(), '4.3.1', 'all');
 		wp_enqueue_style('donation-fontawesome', "https://pro.fontawesome.com/releases/v5.10.0/css/all.css", array(), '5.10.0', 'all');
 		wp_enqueue_style('donation-font', "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap", array(), '5.10.0', 'all');
 		wp_enqueue_style('donation-owl-carousel', "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css", array(), '5.10.0', 'all');
 		wp_enqueue_style('donation-animate', "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css", array(), '4.1.1', 'all');
 		wp_enqueue_style('donation-owl-carousel', "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css", array(), '5.10.0', 'all');
+		wp_enqueue_style('donation-style', get_template_directory_uri() . "/style.css", array(), $version, 'all');
 		
 	}
 	add_action('wp_enqueue_scripts', 'donation_register_styles');
-	
-	
-	
+
+
 	function donation_register_scripts()
 	{
 		$version = wp_get_theme()->get('Version');
 	
 		wp_enqueue_script('donation-bootstrap-jquery', "https://code.jquery.com/jquery-3.4.1.js", array(), '3.4.1', 'all', true);
+		wp_enqueue_script('donation-slim-min-js', "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js", array(), '3.5.1', 'all', true);
+		wp_enqueue_script('donation-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '3.5.1', 'all', true);
+		// wp_enqueue_script('donation-dropify-min', "https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js", array(), '3.4.1', 'all', true);
+		// wp_enqueue_script('donation-dropify-min', "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js", array(), '3.4.1', 'all', true);
+			wp_enqueue_script('donation-dropify-toggle', "https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js", array(), '3.4.1', 'all', true);
 		wp_enqueue_script('donation-counter-up', "https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js", array(), '3.5.1', 'all', true);
-		// wp_enqueue_script('donation-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '3.5.1', 'all', true);
 		wp_enqueue_script('donation-ajax', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js", array(), '1.16.0', 'all', true);
 		wp_enqueue_script('donation-bootstrap-js', "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", array(), '4.5.2', 'all', true);
 		wp_enqueue_script('donation-owl-carousel-js', "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js", array(), '3.4.1', 'all', true);
 		wp_enqueue_script('donation-cloudflare-jquery', "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js", array(), '4.0.1', 'all', true);
 		wp_enqueue_script('donation-js', get_template_directory_uri() . "/assets/js/main.js", array(), $version, 'all', true);
+		
 	
 		
 	}

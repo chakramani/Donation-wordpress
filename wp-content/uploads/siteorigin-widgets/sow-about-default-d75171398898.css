@@ -26,3 +26,14 @@
 .so-widget-sow-about-default-d75171398898 .float-left {
   float: left !important;
 }
+.so-widget-sow-about-default-d75171398898 ol.breadcrumb.float-right {
+  padding: 0 !important;
+}
+.so-widget-sow-about-default-d75171398898 .heading .breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  font-size: 12px;
+  color: #6c757d;
+  padding: 7px 5px;
+  content: "/";
+}

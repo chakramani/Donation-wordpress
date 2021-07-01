@@ -102,3 +102,13 @@
   left: 23%;
   color: #ffffffe6;
 }
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+  .so-widget-sow-event-default-d75171398898 .col-lg-auto.mb-5 {
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width: 576px) and (min-width: 200px) {
+  .so-widget-sow-event-default-d75171398898 .col-lg-auto.mb-5 {
+    width: 100% !important;
+  }
+}

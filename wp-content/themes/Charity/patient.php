@@ -9,18 +9,18 @@
 <?php 
 
     $upload_dir = wp_upload_dir();
+    // echo $upload_dir;
     // echo $upload_dir['url'];
     global $wpdb;
     $table=$wpdb->prefix . 'patient';
     $query = $wpdb->prepare( "SELECT * FROM $table");
-    $result=$wpdb->get_results($query);
-    
+    $result=$wpdb->get_results($query);  
 ?>
 
 
 <div class="container">
     <div>
-        <h3 class="patient_list">Patient List</h3>
+        <h3 class="patient_list text-center mt-4">Patient List</h3>
     </div>
 
     <div class="row">
@@ -32,6 +32,7 @@
             <div class="column">
                 <div class="patient-list">
                     <div class="image_section">
+                    <!-- <?php echo $upload_dir['url']."/".$print->photo; ?> -->
                         <img class="card-img-patient" src=<?php echo $upload_dir['url']."/".$print->photo; ?> alt="img"
                         width="100" height="90" >
                     </div>
@@ -50,7 +51,7 @@
                     </div>
                     <div class="reqd_amount">
                         <label>Required Amount</label>
-                        <button disabled="disabled"><?php echo $print->required_amt; ?></button>
+                        <button disabled="disabled" class="rounded"><?php echo $print->required_amt; ?> </button>
                     </div>
                     <div>
                         <input type="hidden" name="p_id" value="<?php echo $print->id ?>" />
@@ -65,5 +66,6 @@
         <?php
     }
     ?>
+    </div>
 </div>
 <?php get_footer();?>

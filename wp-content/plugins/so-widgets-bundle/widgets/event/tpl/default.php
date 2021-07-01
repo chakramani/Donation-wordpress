@@ -16,7 +16,7 @@
                             );
                         ?>
 
-                        <div class="col col-lg-auto mb-5" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
+                        <div class="col-lg-auto mb-5" style="width: <?php echo round( 100 / $instance['per_row'], 3 ) ?>%">
                             <div class="c-display">
                                 <div class="card-images">
                                     <?php if(!empty($attachment[0])):  ?>

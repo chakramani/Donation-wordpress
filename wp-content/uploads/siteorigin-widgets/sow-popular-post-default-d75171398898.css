@@ -1,0 +1,216 @@
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images {
+  background-image: url("../images/blog_banner.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px #171612ad;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images nav.navbar2.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background: transparent !important;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .navbar .navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .blog_banner {
+  border-top: 1px solid #ffffff38;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images nav {
+  padding: 4rem;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .breadcrumb {
+  background-color: #e9ecef03;
+  justify-content: center;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .breadcrumb .breadcrumb-item + .breadcrumb-item {
+  color: white;
+  font-weight: 600;
+  padding-left: 0px !important;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  padding: 0px !important;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .breadcrumb li.breadcrumb-item {
+  font-size: 12px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_banner_images .breadcrumb li.breadcrumb-item a {
+  color: #f1b33c;
+  font-size: 12px;
+  padding: 0px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper {
+  margin: 80px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper input[type=text] {
+  background: white;
+  border: 1px solid #80808045;
+  border-right: none;
+  box-shadow: 0 0.3rem 1rem #0000001a;
+  float: left;
+  font-size: 13px;
+  padding: 10px;
+  width: 80%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper button {
+  background: white;
+  border: 1px solid #80808036;
+  border-left: none;
+  color: #f1b33c;
+  cursor: pointer;
+  float: left;
+  font-size: 13px;
+  padding: 10px;
+  width: 20%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog_categories h3.bc,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_post h3.bc,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags h3.bc {
+  margin: 0px;
+  text-align: left;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog_categories .underline::after,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_post .underline::after,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .underline::after {
+  left: 0;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog_categories {
+  margin-top: 70px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper ul.sidebar-list {
+  margin-top: 30px;
+  padding-left: 0px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper ul.sidebar-list a {
+  padding: 0px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper ul.sidebar-list h6 {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_post {
+  margin: 30px 0px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_post img {
+  height: 60px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_post .popular_post_wrapper {
+  margin-top: 40px;
+  display: flex;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_post h6.popular_post_heading {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_image_wrapper .box1 {
+  align-items: center;
+  background-image: url("../images/popular_image.jpeg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px #f1b33ce0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  justify-content: center;
+  position: relative;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_image_wrapper .box1 .text,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_image_wrapper .box1 .size {
+  font-size: 17px;
+  font-weight: bold;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags {
+  margin-top: 30px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list {
+  margin-top: 40px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.finance,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.transport,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.financial,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.financial_bussiness,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.wordpress,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.stock,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.carlos_theme,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.carlos {
+  border: 1px solid #a9a9a961;
+  color: darkgray;
+  margin-bottom: 8px;
+  margin-right: 4px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.finance,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.transport,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.financial {
+  width: 30%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.financial_bussiness {
+  width: 55%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.stock {
+  width: 25%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.carlos_theme {
+  width: 42%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.carlos {
+  width: 25%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .popular_tags .tags_list button.wordpress {
+  width: 37%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog_card {
+  box-shadow: 0 0.5rem 1rem #0000001c;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog_images img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper {
+  padding: 20px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper h3 {
+  margin: 0px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper .ad small {
+  font-size: 13px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper .icon_details {
+  font-size: 13px;
+  margin: 15px;
+  text-align: center;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper .icon_details span {
+  color: darkgray;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper i.fas,
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .blog-content_wrapper i.far {
+  color: #f1b33c;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .pagination .page-item:first-child .page-link {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: 0;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .pagination i.fas.fa-angle-right {
+  font-size: 11px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .pagination a {
+  color: black;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .pagination a.page-link {
+  background: #a9a9a940;
+  color: black;
+  margin-right: 5px;
+}
+.so-widget-sow-popular-post-default-d75171398898 .blog_wrapper .pagination a.page-link:hover {
+  background: #f1b33c;
+  color: white;
+}

@@ -1,0 +1,117 @@
+.column1 {
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+.discription {
+    margin-top: 17px;
+}
+.title_tag {
+    margin: 10px;
+}
+.team-work-img {
+    margin: 28px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 12px;
+    margin: 8px;
+}
+.sow-headline-container {
+    margin: 3rem 0 40px 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 318px;
+    width: 268px;
+    opacity: 0;
+    /* background-color: #008CBA; */
+}
+  
+  .team_card:hover .overlay {
+    opacity: 1;
+  }
+
+
+  .team_card{
+    height: 318px;
+    width: 268px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .team_card:hover{
+      opacity: 1;
+  }
+  .team_text {
+    color: #3e1d9b;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
+    text-align: center;
+    /* margin-top: 130px; */
+  }
+
+  .team_block {
+    padding: 15px;
+}
+.team_icon_facebook {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+
+}
+.team_icon_facebook:hover{
+    color: blue;
+}
+.team_icon_youtube {
+    position: absolute;
+    bottom: 0;
+    margin-left: 75px;
+    margin-bottom: 0px;
+    font-size: 30px;
+
+}
+.team_icon_youtube:hover{
+    color: rgb(233, 50, 50);
+}
+.team_icon_instragram {
+    position: absolute;
+    bottom: 0;
+    margin-left: 155px;
+    margin-bottom: 0px;
+    font-size: 30px;
+
+}
+.team_icon_instragram:hover{
+    color: rgb(117, 8, 8);
+}
+
+.team_icon_twitter {
+    position: absolute;
+    bottom: 0;
+    margin-left: 225px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+    .team_icon_twitter:hover{
+        color: rgb(50, 123, 233);
+    }
