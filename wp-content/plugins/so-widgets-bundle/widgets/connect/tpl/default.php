@@ -28,8 +28,8 @@
             <div class="footer_link">
                 <ul>
                     <?php foreach($instance['other'] as $other):  ?>
-                        <li>
-                            <i class="<?php echo $other['icon'];  ?>"></i>
+                        <li class="link-icon">
+                            <?php echo siteorigin_widget_get_icon($other['icon']);  ?>
                             <a href="#"><span> &nbsp; &nbsp;<?php echo $other['text'];  ?></span></a>
                         </li>
                     <?php endforeach;  ?>

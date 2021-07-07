@@ -8084,3 +8084,47 @@ form#commentform p a {
   text-transform: lowercase;
 }
 
+input.search-submit {
+  border-radius: 65rem;
+  padding: 9px 16px;
+  font-size: 11px;
+  border: #fff;
+  color: #fff;
+  background: #f1b33c;
+  margin: 0 0 6px 2px;
+}
+form.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#tag_cloud-7 h6 {
+  display: none;
+}
+img.img-banner {
+  width: 100%;
+  aspect-ratio: 4.5 / 2;
+  object-fit: cover;
+}
+
+h6.footer-widget-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  /* margin-top: 1rem; */
+}
+.single-sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.sharing-part.d-flex.justify-content-between.pb-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel-layout {
+  margin-top: 6rem;
+}

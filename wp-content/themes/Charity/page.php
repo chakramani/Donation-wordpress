@@ -14,7 +14,7 @@
           <ol class="breadcrumb breadcrumb-nav">
             <li class="breadcrumb-item"><a href="<?php echo get_home_url(); ?>" class="active">Home</a></li>
             <li class="breadcrumb-item" aria-current="page">
-              <a href="#">our blog</a>
+              <a href="http://localhost/wordpress/blog/">our blog</a>
             </li>
           </ol>
         </nav>
@@ -45,50 +45,60 @@
           <div class="col-md-9 col-12">
             <section class="main-bar">
               <?php
+              // if(have_posts()):
+                $args = array('posts_per_page' => '4');
+                $recent_posts = new WP_Query($args);
+                while ($recent_posts->have_posts()) {
 
-              $args = array('posts_per_page' => '3');
-              $recent_posts = new WP_Query($args);
-              while ($recent_posts->have_posts()) {
+                  $recent_posts->the_post();
 
-                $recent_posts->the_post();
-
-                if (has_post_thumbnail()) { ?>
-                  <figure class="first-image">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="images" height="300px;" />
-                  </figure>
-                  <div class="caption-wrapper">
-                    <h4 class="pb-2"><?php echo get_the_title(); ?></h4>
-                    <i class="far fa-alarm-clock"></i> <a href="#"> <?php the_time('m/j/y g:i A') ?></a>
-                    <i class="far fa-user-circle"></i> <a href="#"> By <?php echo the_author_posts_link(); ?></a>
-                    <i class="fal fa-comment-alt-dots"></i> <a href="#"><?php echo get_comments_number(); ?> </a>
-                    <i class="fal fa-folder"></i><a href="#"> <?php echo the_category('/') ?></a>
-                    <p>
-                      <?php echo get_the_excerpt($post); ?>
-                    </p>
-                    <a href="<?php echo get_permalink(); ?>" class="read-more">READ MORE<i class="fas fa-arrow-right"></i></a>
-                  </div>
-                  <hr />
-                  <?php
+                  if (has_post_thumbnail()) { ?>
+                    <figure class="first-image">
+                      <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="images" height="300px;" />
+                    </figure>
+                    <div class="caption-wrapper">
+                      <h4 class="pb-2"><?php echo get_the_title(); ?></h4>
+                      <i class="far fa-alarm-clock"></i> <a href="#"> <?php the_time('m/j/y g:i A') ?></a>
+                      <i class="far fa-user-circle"></i> <a href="#"> By <?php echo the_author_posts_link(); ?></a>
+                      <i class="fal fa-comment-alt-dots"></i> <a href="#"><?php echo get_comments_number(); ?> </a>
+                      <i class="fal fa-folder"></i><a href=""> <?php echo the_category('/') ?></a>
+                      <p>
+                        <?php echo get_the_excerpt($post); ?>
+                      </p>
+                      <a href="<?php echo get_permalink(); ?>" class="read-more">READ MORE<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <hr />
+                    <?php
+                  }
                 }
-              }
-              previous_posts_link();
-              next_posts_link();
-              wp_reset_postdata();
+                ?>
+                <!-- pagiation section --> 
+
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link next-btn" href="#"> Next </a>
+                    </li>
+                  </ul>
+                </nav> 
+
+                <?php
+                paginate_links();
+                echo get_the_posts_pagination();
+                previous_post_link();
+                next_post_link();
+                // wp_reset_postdata();
+                
+              // endif;
+              // page1_pagination();
+              
+              
               ?>
-              <!-- pagiation section -->
-              <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link next-btn" href="#">Next ></a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- pagiation section ends here-->
             </section>
           </div>
         </div>
@@ -110,4 +120,32 @@ else{
   </div>
 
 <?php }  ?>
+
+
+<!-- <?php 
+
+  function page1_pagination()
+    {
+      $allowed_tags = [
+        'span' => [
+          'class' => []
+        ],
+        'a' => [
+          'class' => [],
+          'href' => [],
+        ]
+      ];
+
+      $args1 = [
+        'before_page_number' => '<span class="btn border border-secondary">',
+        'after_page_number' => '</span>',
+      ];
+
+      // printf('<nav class="ksksks"> </nav>');
+      printf( '<nav class="page1_pagination" > %s </nav>', wp_kses( paginate_links( $args1 ), $allowed_tags ) );
+    }
+
+?> -->
+
+
 <?php get_footer(); ?>

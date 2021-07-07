@@ -11,10 +11,10 @@
             'name'          => __( 'Single Post Widgets', 'textdomain' ),
             'id'            => 'mytheme-single-post-widgets',
             'description'   => __( 'Widgets in this area will be shown under your single posts, before comments.', 'textdomain' ),
-            'before_widget' => '',
-            'after_widget'  => '',
-            'before_title'  => '',
-            'after_title'   => '',
+            'before_widget' => '<div id="%1$s" class="sidebar-box %2$s clr">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<' . $heading . '>',
+			'after_title'   => '</' . $heading . '>',
         ) );
         
 
@@ -67,7 +67,7 @@
 				'description'   => esc_html__( 'Widgets in this area are used in the first footer region.', 'oceanwp' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s clr">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<' . $foo_heading . ' class="widget-title">',
+				'before_title'  => '<' . $foo_heading . ' class="footer-widget-title">',
 				'after_title'   => '</' . $foo_heading . '>',
 			)
 		);
@@ -80,7 +80,7 @@
 				'description'   => esc_html__( 'Widgets in this area are used in the second footer region.', 'oceanwp' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s clr">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<' . $foo_heading . ' class="widget-title">',
+				'before_title'  => '<' . $foo_heading . ' class="footer-widget-title">',
 				'after_title'   => '</' . $foo_heading . '>',
 			)
 		);
@@ -93,7 +93,7 @@
 				'description'   => esc_html__( 'Widgets in this area are used in the third footer region.', 'oceanwp' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s clr">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<' . $foo_heading . ' class="widget-title">',
+				'before_title'  => '<' . $foo_heading . ' class="foter-widget-title">',
 				'after_title'   => '</' . $foo_heading . '>',
 			)
 		);
@@ -106,7 +106,7 @@
 				'description'   => esc_html__( 'Widgets in this area are used in the fourth footer region.', 'oceanwp' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s clr">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<' . $foo_heading . ' class="widget-title">',
+				'before_title'  => '<' . $foo_heading . ' class="footer-widget-title">',
 				'after_title'   => '</' . $foo_heading . '>',
 			)
 		);

@@ -52,7 +52,7 @@
                                 <i class="far fa-user-circle "></i><?php echo the_author_posts_link(); ?>
                                 <i class="fal fa-comment-alt-dots "></i> <a
                                     href=""><?php echo get_comments_number(); ?></a>
-                                <i class="fal fa-folder "></i> <a href=""><?php echo the_category('/') ?></a>
+                                <i class="fal fa-folder "></i> <a href="<?php get_the_category_list(); ?>"><?php echo the_category('/') ?></a>
 
                                 <p class="py-3">
                                     <?php echo the_content(); ?>
@@ -61,19 +61,16 @@
 
                             <div class="sharing-part d-flex justify-content-between pb-4">
                                 <div>
-                                    <i class="fal fa-share-alt social-icons pt-3"></i><a class="#">bluetooth</a>
+                                    <i class="fal fa-share-alt social-icons pt-3"></i><a href="">bluetooth</a>
                                 </div>
 
-                                <div class="btn">
-                                    <button type="button" class="btn btn-outline-secondary btn-sm">
-                                        Primary
-                                    </button>
-                                    <button type="button" class="btn btn-outline-secondary btn-sm">
-                                        Secondary
-                                    </button>
-                                    <button type="button" class="btn btn-outline-secondary btn-sm">
-                                        Success
-                                    </button>
+                                <div class="single-sidebar">
+                                    <?php if ( is_active_sidebar( 'mytheme-single-post-widgets' ) ) { ?>
+                                        <div id="secondary" class="widget-area" role="complementary">
+                                        <?php dynamic_sidebar( 'mytheme-single-post-widgets' ); ?>
+                                        </div>
+                                        <hr />
+                                    <?php } ?>
                                 </div>
                             </div>
 
@@ -88,7 +85,7 @@
                                 </div>
                             </div>
 
-                                <br>
+                            <br>
                                 
                             <div class="prev-next d-none d-sm-flex justify-content-between pb-4" >
                                 <div class="prev d-flex">
