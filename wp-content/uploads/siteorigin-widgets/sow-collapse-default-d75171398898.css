@@ -1,0 +1,28 @@
+.so-widget-sow-collapse-default-d75171398898 button.btn.btn-link {
+  text-decoration: none;
+  color: #afabab;
+}
+.so-widget-sow-collapse-default-d75171398898 .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.so-widget-sow-collapse-default-d75171398898 button:not(:disabled),
+.so-widget-sow-collapse-default-d75171398898 [type="button"]:not(:disabled),
+.so-widget-sow-collapse-default-d75171398898 [type="reset"]:not(:disabled),
+.so-widget-sow-collapse-default-d75171398898 [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+.so-widget-sow-collapse-default-d75171398898 .card {
+  margin: 20px 0;
+  background-color: #fff;
+}
+.so-widget-sow-collapse-default-d75171398898 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
