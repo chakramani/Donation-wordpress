@@ -213,7 +213,7 @@
                     </div>
 
                     <div class="patient_register_btn">
-                        <input type="submit" value="Register" name="Register" class="button">
+                        <input type="submit" value="Register" name="Register">
                     </div>
 
                 </form>
